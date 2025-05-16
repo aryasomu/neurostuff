@@ -1,0 +1,10 @@
+pandas
+numpy
+matplotlib
+backtrader
+streamlit
+plotly
+yfinance
+scikit-learn
+transformers
+torch
