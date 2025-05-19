@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sentiment Detector</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Emotion Detector</h1>
+        <form method="POST">
+            <textarea name="sentence" placeholder="Type how you feel..." required>{{ user_input }}</textarea>
+            <button type="submit">Analyze</button>
+        </form>
+        {% if emotion %}
+        <div class="result">
+            <p><strong>Emotion:</strong> {{ emotion }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
